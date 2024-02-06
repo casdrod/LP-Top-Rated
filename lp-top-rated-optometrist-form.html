@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="" name="Description" />
+    <link href="er-np-styles.css" type="text/css" rel="stylesheet">
+    <title>$var(pageTitle)$</title>
+
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600|Barlow:300,400,400i,700" rel="stylesheet">
+    <script async src='https://tag.simpli.fi/sifitag/d0839950-0d38-0137-dfb5-06a9ed4ca31b'></script>
+</head>
+<body>
+
+<body>
+
+    <header>
+        <div class="flex-ed container">
+            <a href="/" class="logo"> <img src="assets/images/er-np-logo.png" alt=" Dental Logo" /></a>
+            <a href="er-new-patient-form.html" class="btn-alt"><span>Request</span> an Appointment</a>
+            <address>
+                <a href="" target="_blank" class="address">
+                    500 Lockwood Dr. <br>  
+                    Richardson, TX 75080
+                </a>
+                <a href="" class="phone"> (123) 456-7890</a>
+            </address>
+        </div>
+    </header>
+
+
+    <div id="lp-appointment-form">
+        <h1>Request an Appointment</h1>
+        <p>Thank you for your interest in Coco Dental. Please fill out your information in the form below and a member of our team will reach out to you soon.</p>
+            <form class="simple forms" method="post" action="https://tnt-adder.herokuapp.com/submit/1790a51c-fbbf-44f1-8c89-bf66c511b775">
+            <div><label>Name</label> <input name="Name" placeholder="Name" required="true" type="text" /></div>
+            <div><label>Phone Number</label> <input name="Phone" placeholder="Phone" required="true" type="text" /></div>
+            <div><label>Email Address</label> <input name="email" placeholder="Email" required="true" type="email" /></div>
+            <div><label>Are you a new or existing patient?</label>
+                <select name="Patient" >
+                    <option value="" hidden>Are You A New Or Existing Patient?</option>
+                    <option value="New Patient">New Patient</option>
+                    <option value="Existing Patient">Existing Patient</option>
+                </select>
+            </div>
+            <div class="hear">
+                <label>How did you hear about us?</label>
+                <select name="Discover">
+                    <option value="" hidden>How Did You Hear About Us?</option>
+                    <option value="search engine">Search Engine</option>
+                    <option value="family">Family/Friend</option>
+                    <option value="promotion">Promotion</option>
+                    <option value="social media">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div><label>Comments</label><textarea name="CommentArea" placeholder="Comments" type="textarea" value="comments"></textarea></div>
+            <button class="submitBtn btn">SEND</button>
+            <input type="hidden" name="_subject" value="LP NP Count on Us - Request an Appointment" />
+            <input type="hidden" name="_redirect" value="thanks.html" />
+        </form>
+    </div>
+
+    <script src="assets/js/lp-er-np.js"></script>
+    
+</body>
+</html>
+
